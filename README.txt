@@ -1,4 +1,5 @@
 🚦 Automotive Road Sign Recognition using Convolutional Neural Networks (CNN)
+
 Project Overview
 Welcome to my deep learning project focused on building a robust Convolutional Neural Network (CNN) for automotive road sign recognition. This project is a foundational step towards understanding the perception systems vital for Advanced Driver-Assistance Systems (ADAS) and autonomous vehicles. Accurate and rapid recognition of road signs is paramount for safe navigation, adherence to traffic laws, and proactive decision-making in real-world driving scenarios.
 
@@ -18,12 +19,10 @@ Comprehensive Evaluation: Provides detailed metrics (loss, accuracy) on unseen t
 Example Prediction: Demonstrates real-time inference with confidence scores on a sample image.
 
 🛠️ Technologies Used
+
 Python 3.x
-
 TensorFlow / Keras: For building and training the deep learning model.
-
 NumPy: For numerical operations and data manipulation.
-
 Matplotlib: For visualizing training performance.
 
 📊 Dataset
@@ -37,13 +36,12 @@ To obtain and set up the dataset, please follow these steps:
 
 Download from the Official GTSRB Website:
 
-Visit the official GTSRB website: http://btsd.ethz.ch/shareddata/
+Visit the official GTSRB website: https://benchmark.ini.rub.de/gtsrb_dataset.html
 
 Download the following files:
 
-GTSRB_Final_Training_Images.zip (around 200MB)
-
-GTSRB_Final_Test_Images.zip (around 300MB)
+GTSRB_Final_Training_Images.zip 
+GTSRB_Final_Test_Images.zip 
 
 GTSRB_Final_Test_GT.zip (provides ground truth for the test set, useful for detailed analysis, though ImageDataGenerator will handle labels if images are correctly structured).
 
@@ -88,7 +86,6 @@ road-sign-recognition-cnn/
 ├── road_sign_classifier.py
 ├── README.md
 
-Note on Data Scale: Initially, I prototyped this model using a subset of only two classes (00001 and 00002) to expedite iteration and development on a mid-range machine. Upon successful validation of the core architecture, the project was scaled to incorporate all 43 classes for a comprehensive and robust solution. This iterative approach allowed for efficient resource management while ensuring the final solution's applicability across the full spectrum of traffic signs.
 
 🧠 Model Architecture
 The CNN architecture is a Sequential model comprising:
@@ -137,9 +134,9 @@ _________________________________________________________________
 🚀 Performance (Full 43 Classes)
 Upon training with the complete GTSRB dataset, the model demonstrated robust performance:
 
-Test Loss: []
+Test Loss: [0.0090]
 
-Test Accuracy: []
+Test Accuracy: [0.9973]
 
 This high accuracy underscores the effectiveness of the CNN architecture and data augmentation strategies in learning intricate features of various road signs.
 
@@ -172,17 +169,20 @@ The script will load data, build the model, start training, display performance 
 📈 Results
 Here's a visual representation of the model's training performance:
 
-Model Accuracy over Epochs:
+Model Accuracy & Loss over Epochs:
+**Model Accuracy & Loss over Epochs:**
+![Model Accuracy Plot](<https://github.com/SaadNjimi/automotive-road-sign-classifier/blob/master/TV_figure.png>)
+*Caption: -.*
 
-Caption: Training and Validation Accuracy progression over epochs, demonstrating the model's learning curve.
+Caption: 
+Training and Validation Accuracy progression over epochs, demonstrating the model's learning curve.
+Training and Validation Loss progression, indicating the model's error reduction during training
 
-Model Loss over Epochs:
-
-Caption: Training and Validation Loss progression, indicating the model's error reduction during training.
 
 Example Prediction:
-
-Caption: An example prediction showcasing the model correctly classifying a road sign with high confidence.
+**Example Prediction:**
+![Example Prediction](<https://github.com/SaadNjimi/automotive-road-sign-classifier/blob/master/random_example.png>)
+*Caption: An example prediction showcasing the model correctly classifying a road sign with high confidence.*
 
 
 Thank you for visiting my project!
