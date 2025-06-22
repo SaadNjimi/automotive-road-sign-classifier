@@ -99,37 +99,9 @@ Flatten Layer: Converts the 2D feature maps into a 1D vector.
 Dense Layers: A hidden Dense layer with 128 units (ReLU activation) and a final Dense output layer with NUM_CLASSES (43) units and softmax activation for multi-class probability distribution.
 
 Model: "sequential"
-_________________________________________________________________
- Layer (type)                  Output Shape          Param #
-=================================================================
- conv2d (Conv2D)               (None, 32, 32, 32)    896
- batch_normalization (BatchNo  (None, 32, 32, 32)    128
- rmalization)
- max_pooling2d (MaxPooling2D)  (None, 16, 16, 32)    0
- conv2d_1 (Conv2D)             (None, 16, 16, 64)    18496
- batch_normalization_1 (Batc   (None, 16, 16, 64)    256
- hNormalization)
- max_pooling2d_1 (MaxPooling2  (None, 8, 8, 64)      0
- D)
- conv2d_2 (Conv2D)             (None, 8, 8, 128)     73856
- batch_normalization_2 (Batc   (None, 8, 8, 128)     512
- hNormalization)
- max_pooling2d_2 (MaxPooling2  (None, 4, 4, 128)     0
- D)
- dropout (Dropout)             (None, 4, 4, 128)     0
- flatten (Flatten)             (None, 2048)          0
- dense (Dense)                 (None, 128)           262272
- batch_normalization_3 (Batc   (None, 128)           512
- hNormalization)
- dropout_1 (Dropout)           (None, 128)           0
- dense_1 (Dense)               (None, 2)             258  <-- Note: This '2' becomes '43' for full dataset.
-=================================================================
-Total params: 357186 (1.36 MB)
-Trainable params: 356482 (1.36 MB)
-Non-trainable params: 704 (2.75 KB)
-_________________________________________________________________
-
-(Note: The dense_1 layer's Param # will be larger when NUM_CLASSES is 43, indicating connections to 43 output neurons instead of 2.)
+**Model: "sequential"**
+![Model](Screenshot_1.png)
+*Caption: The dense_1 layer's Param # will be larger when NUM_CLASSES is 43, indicating connections to 43 output neurons instead of 2*
 
 🚀 Performance (Full 43 Classes)
 Upon training with the complete GTSRB dataset, the model demonstrated robust performance:
