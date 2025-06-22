@@ -171,7 +171,7 @@ Here's a visual representation of the model's training performance:
 
 Model Accuracy & Loss over Epochs:
 **Model Accuracy & Loss over Epochs:**
-![Model Accuracy Plot](<https://github.com/SaadNjimi/automotive-road-sign-classifier/blob/master/TV_figure.png>)
+![Model Accuracy Plot](https://github.com/SaadNjimi/automotive-road-sign-classifier/blob/master/TV_figure.png)
 *Caption: -.*
 
 Caption: 
@@ -181,7 +181,7 @@ Training and Validation Loss progression, indicating the model's error reduction
 
 Example Prediction:
 **Example Prediction:**
-![Example Prediction](<https://github.com/SaadNjimi/automotive-road-sign-classifier/blob/master/random_example.png>)
+![Example Prediction](https://github.com/SaadNjimi/automotive-road-sign-classifier/blob/master/random_example.png)
 *Caption: An example prediction showcasing the model correctly classifying a road sign with high confidence.*
 
 
