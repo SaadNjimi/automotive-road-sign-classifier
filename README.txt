@@ -170,7 +170,7 @@ The script will load data, build the model, start training, display performance 
 Here's a visual representation of the model's training performance:
 
 **Model Accuracy & Loss over Epochs:**
-![Model Accuracy Plot](TV_figure.png)
+![Model Accuracy Plot](https://raw.githubusercontent.com/SaadNjimi/automotive-road-sign-classifier/master/TV_figure.png)
 *Caption: Training and Validation Accuracy & Loss progression over epochs.*
 
 
