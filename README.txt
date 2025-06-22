@@ -170,12 +170,12 @@ The script will load data, build the model, start training, display performance 
 Here's a visual representation of the model's training performance:
 
 **Model Accuracy & Loss over Epochs:**
-![Model Accuracy Plot](master/TV_figure.png)
+![Model Accuracy Plot](TV_figure.png)
 *Caption: Training and Validation Accuracy & Loss progression over epochs.*
 
 
 **Example Prediction:**
-![Example Prediction](master/random_example.png)
+![Example Prediction](random_example.png)
 *Caption: An example prediction showcasing the model correctly classifying a road sign with high confidence.*
 
 
