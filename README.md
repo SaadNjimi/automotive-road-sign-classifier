@@ -6,6 +6,7 @@ Welcome to my deep learning project focused on building a robust Convolutional N
 As an aspiring automotive software engineer, this project allowed me to dive deep into practical machine learning model development, from data preparation and model architecture design to training optimization and performance evaluation.
 
 ✨ Key Features
+
 Efficient Image Preprocessing: Utilizes ImageDataGenerator for on-the-fly data loading, resizing, and pixel normalization.
 
 Robust Data Augmentation: Implements various augmentation techniques (rotations, shifts, zooms, shears) to enhance model generalization and prevent overfitting, simulating diverse real-world conditions.
@@ -26,6 +27,7 @@ NumPy: For numerical operations and data manipulation.
 Matplotlib: For visualizing training performance.
 
 📊 Dataset
+
 This project utilizes the renowned German Traffic Sign Recognition Benchmark (GTSRB) dataset. The GTSRB is a large, real-world benchmark dataset that contains over 50,000 images of 43 different traffic sign classes.
 
 Data Format: Images are provided in .ppm format.
@@ -42,8 +44,7 @@ Download the following files:
 
 GTSRB_Final_Training_Images.zip 
 GTSRB_Final_Test_Images.zip 
-
-GTSRB_Final_Test_GT.zip (provides ground truth for the test set, useful for detailed analysis, though ImageDataGenerator will handle labels if images are correctly structured).
+GTSRB_Final_Test_GT.zip 
 
 Extract the Contents:
 
@@ -74,18 +75,28 @@ Important: If manually organizing, ensure you create all 43 class subfolders (00
 Your final directory structure should look exactly like this:
 
 road-sign-recognition-cnn/
-├── road_sign_dataset/      # <--- Your processed dataset goes here
-│   ├── train/              # Contains subfolders 00000 to 00042 with training images
-│   │   ├── 00000/
-│   │   ├── 00001/
-│   │   └── ... (up to 00042)
-│   └── test/               # Contains subfolders 00000 to 00042 with test images
-│       ├── 00000/
-│       ├── 00001/
-│       └── ... (up to 00042)
-├── road_sign_classifier.py
-├── README.md
 
+├── road_sign_dataset/      # <--- Your processed dataset goes here
+
+│   ├── train/              # Contains subfolders 00000 to 00042 with training images
+
+│   │   ├── 00000/
+
+│   │   ├── 00001/
+
+│   │   └── ... (up to 00042)
+
+│   └── test/               # Contains subfolders 00000 to 00042 with test images
+
+│       ├── 00000/
+
+│       ├── 00001/
+
+│       └── ... (up to 00042)
+
+├── road_sign_classifier.py
+
+├── README.md
 
 🧠 Model Architecture
 The CNN architecture is a Sequential model comprising:
